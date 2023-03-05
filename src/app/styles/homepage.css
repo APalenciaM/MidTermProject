@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Roboto";
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Roboto";
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+h3 {   
+    font-family: "Roboto";
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+h4 {   
+    font-family: "Roboto";
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+
+
+
+/* Header */
+
+#headerSection {
+    display: grid;
+    grid-template-columns: 10vw 20vw 40vw 20vw 10vw;
+    grid-auto-rows: minmax(10vh, auto);
+}
+
+#logoHeaderDiv {
+    grid-column: 2/3;
+    grid-row: 1;
+
+    display: grid;
+    justify-content: start;
+    align-content: end;
+
+}
+
+#navbarHeaderDiv {
+    grid-column: 3/4;
+    grid-row: 1;
+
+    display: grid;
+    grid-template-columns: 10vw 5vw 10vw 5vw 10vw; 
+    grid-auto-rows: minmax(auto,auto);
+    
+    padding-bottom: 10px;
+}
+
+
+#homeHeaderDiv {
+    grid-column: 1/2;
+    grid-row: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#projectsHeaderDiv {
+    grid-column: 3/4;
+    grid-row: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#servicesHeaderDiv {
+    grid-column: 5/6;
+    grid-row: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.headerLinks {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 17px;
+    color: #6B708D;
+}
+
+#linkHeaderDiv {
+    grid-column: 4/5;
+    grid-row: 1;
+
+    display: grid;
+}
+
+#contactUsHeaderDiv {
+    grid-column: 4/5;
+    grid-row: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 17px;
+    color: white;    
+}
+
+#contacUsHeaderArticle {
+    background-color: #072AC8;
+    border: #072AC8 10px solid;
+}
