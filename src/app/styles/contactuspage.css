@@ -34,6 +34,30 @@ h4 {
     font-weight: bold;
 }
 
+a {
+    font-family: 'Roboto Regular';
+    font-weight: 400;
+    line-height: 30px;
+    color: rgb(107, 112, 141);
+}
+
+textarea {
+    justify-content: center;
+    height: 2.5em;
+    background: rgba(107, 112, 141, 0.1);
+    border: none;
+}
+
+input {
+    justify-content: center;
+    height: 2.5em;
+    background: rgba(107, 112, 141, 0.1);
+    color: rgb(107, 112, 141);
+    border: none;
+    padding-left: 20px;
+    
+}
+
 
 /* Header */
 
@@ -137,52 +161,90 @@ h4 {
     color: rgba(7, 42, 200, 1);
 }
 
-/* Hero Section*/
 
-#heroSection {
+/* Contact Us */
+
+#contactusSection  {
+    margin: 10vh 10vw;
+}
+
+#contactusForm {
     display: grid;
-    grid-template-columns: 10vw 40vw 40vw 10vw;
-    grid-row: 1;
-
-    padding-top: 10vh;
+    grid-template-columns: 48% 4% 48%; 
+    grid-auto-rows: minmax(auto,auto);
 }
 
-#contentHeroDiv {
-    grid-column: 2/3;
-    grid-row: 1;
-
-    background-color: rebeccapurple;
-}
-
-#imageHeroDiv {
-    grid-column: 3/4;
-    grid-row: 1;
-
-    display: grid;
-
-}
-
-#card1Image {
-    grid-column: 1/2;
-    grid-row: 1;
-    
-
-    width: calc(40vw/2);
-    z-index: 0;
-}
-
-#heroImage {
+#nameFormDiv {
     grid-column: 1/4;
-    grid-row: 1/4;
+    grid-row: 1;
 
-    width: 40vw;
-    z-index: -2;
+    display: flex;
+    flex-direction: column;
 }
 
-#card2Image {
+#nameFormDiv a {
+    margin-bottom: 0.5em;
+}
+
+#emailFormDiv {
+    grid-column: 1/2;
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#emailFormDiv a {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+#phoneFormDiv {
     grid-column: 3/4;
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#phoneFormDiv a {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+#messageFormDiv {
+    grid-column: 1/4;
     grid-row: 3;
 
-    width: calc(40vw/2);
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
 }
+
+#messageFormDiv a {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+#buttonFormDiv {
+    grid-column: 1/4;
+    grid-row: 5;
+
+    margin-top: 1.5em;
+}
+
+#buttonFormDiv button {
+    width: 100%;
+    height: 100%;
+    background-color: #072AC8;
+    border: none;
+
+    font-family: 'Roboto';
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
