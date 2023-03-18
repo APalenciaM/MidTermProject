@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Circle - Projects</title>
-    <link rel="stylesheet" href="../styles/homepage.css">
+    <link rel="stylesheet" href="../styles/projectspage.css">
   </head>
   <header>
     <section id="headerSection">
@@ -31,7 +31,103 @@
         </div>
     </div>
   </header>
-  <body>
-
+  <body onload="ChargeProjects()">
+    <section id="actualProjectId">
+      <div style="display: flex; flex-direction: column; grid-column: 2;">
+        <div>
+          <h2 id="actualTitle"></h2>
+          <a id="actualvalue" style="display: none;">0</a>
+        </div>
+        <div id="headerProject">
+          <h4 id="subTitle"></h4>
+          <p style="text-align: right;"><strong>Completed on: </strong><a id="completedon"></a></p>
+        </div>
+        <div>
+          <img width="100%" id="actualImage">
+        </div>
+        <div>
+          <p id="actualDescription"></p>
+        </div>
+      </div>
+    </section>
+    <section id="RecentProjectsSection">
+      <div id="RecentProjectsTitle">
+        <h2>Recent Projects</h2>
+      </div>
+      <div id="project1div">
+        <img id="project1image">
+        <div id="infoProject1div">
+          <h4 id="titleProject1"></h4>
+          <a id="project1value" style="display: none;">1</a>
+          <a id="contentProject1"></a>
+          <a class="serviceLearnMore" id="event1" href="#">Learn more</a>
+        </div>
+      </div>
+      <div id="project2div">
+        <img id="project2image">
+        <div id="infoProject2div">
+          <h4 id="titleProject2"></h4>
+          <a id="project2value" style="display: none;">2</a>
+          <a id="contentProject2"></a>
+          <a class="serviceLearnMore" id="event2" href="#">Learn more</a>
+        </div>
+      </div>
+      <div id="project3div">
+        <img id="project3image">
+        <div id="infoProject3div">
+          <h4 id="titleProject3"></h4>
+          <a id="project3value" style="display: none;">3</a>
+          <a id="contentProject3"></a>
+          <a class="serviceLearnMore" id="event3" href="#">Learn more</a>
+        </div>
+      </div>
+    </section>
+    <section id="questionSection">
+      <div id="contentQuestionDiv">
+        <div id="questionTitleDiv">
+          <h2>Do you have any questions?</h2>
+        </div>
+        <div id="questionSubTitleDiv">
+          <a>Let us help you!</a>
+        </div>
+        <div id="questionMailDiv">
+          <div>
+            <img id="mailIcon" src="../../assets/images/newsletter/icon/mail.svg">
+            <input id="subscribeQuestionInput" placeholder="Enter your email" type="text" >
+            <button id="subscribeQuestionButton">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section id="footerSection">
+        <div id="logoFooterDiv">
+          <img src="../../assets/images/logos/circle.svg">
+        </div>
+        <div id="teamFooterDiv">
+          <a>Team</a>
+        </div>
+        <div id="servicesFooterDiv">
+          <a>Services</a>
+        </div>
+        <div id="aboutUsFooterDiv">
+          <a>About Us</a>
+        </div>
+        <div id="locationFooterDiv">
+          <a>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</a>
+        </div>
+        <div id="pressFooterDiv">
+          <a>Press</a>
+        </div>
+        <div id="projectsFooterDiv">
+          <a>Projects</a>
+        </div>
+        <div id="policyFooterDiv">
+          <a>Privacy Policy</a>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
+
+<script src="../services/index.js"></script>
