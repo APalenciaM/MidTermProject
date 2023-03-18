@@ -35,29 +35,15 @@ h4 {
     font-weight: bold;
 }
 
-textarea {
-    justify-content: center;
-    height: 2.5em;
-    background: rgba(107, 112, 141, 0.1);
-    border: none;
-}
-
-input {
-    justify-content: center;
-    height: 2.5em;
-    background: rgba(107, 112, 141, 0.1);
-    color: rgb(107, 112, 141);
-    border: none;
-    padding-left: 20px;
-    
-}
 
 /* Header */
+
 #headerSection {
     display: grid;
     grid-template-columns: 10vw 20vw 40vw 20vw 10vw;
     grid-auto-rows: minmax(10vh, auto);
 
+    position: fixed;
     z-index: 2;
     background: rgba(244, 246, 252, 1);
 
@@ -163,98 +149,299 @@ input {
     color: rgba(7, 42, 200, 1);
 }
 
+/* Actual Project */
 
-/* Contact Us */
-
-#contactusSection  {
-    margin: 5vh 10vw 10vh;
-}
-
-#contactusForm {
+#actualProjectId {
     display: grid;
-    grid-template-columns: 48% 4% 48%; 
-    grid-auto-rows: minmax(auto,auto);
+    grid-template-columns: 10vw 80vw 10vw;
+    padding-top: 20vh;
 }
 
-#nameFormDiv {
-    grid-column: 1/4;
+#headerProject {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#completedon,#actualDescription{
+    font-family: 'Roboto Regular';
+    font-weight: 400;
+    color: rgba(107, 112, 141, 1);
+}
+
+/* Recent Projects */
+
+#RecentProjectsSection {
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: 10vw 24vw 4vw 24vw 4vw 24vw 10vw;
+    margin-bottom: 10vh;
+}
+
+#RecentProjectsSection img {
+    height: 350px;
+}
+
+#RecentProjectsSection h4 {
+    margin-bottom: 10px;
+}
+
+#RecentProjectsTitle {
+    grid-column: 2;
+}
+
+#project1div {
+    display: flex;
+    flex-direction: column;
+
+    grid-row: 2;
+    grid-column: 2;
+
+    background-color: white;
+}
+
+
+#infoProject1div {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1vw;
+}
+
+#contentProject1 {
+    margin-bottom: 50px;
+
+    font-family: 'Roboto Regular';
+    font-weight: 400;
+    color: rgba(107, 112, 141, 1);
+}
+
+#project2div {
+    display: flex;
+    flex-direction: column;
+
+    grid-row: 2;
+    grid-column: 4;
+
+    background-color: white;
+}
+
+
+#infoProject2div {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1vw;
+}
+
+#contentProject2 {
+    margin-bottom: 50px;
+
+    font-family: 'Roboto Regular';
+    font-weight: 400;
+    color: rgba(107, 112, 141, 1);
+}
+#project3div {
+    display: flex;
+    flex-direction: column;
+
+    grid-row: 2;
+    grid-column: 6;
+
+    background-color: white;
+}
+
+#infoProject3div {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1vw;
+}
+
+#contentProject3 {
+    margin-bottom: 50px;
+
+    font-family: 'Roboto Regular';
+    font-weight: 400;
+    color: rgba(107, 112, 141, 1);
+}
+
+
+
+#ourServicesSection {
+    display: grid;
+    grid-template-columns: 10vw 24vw 4vw 24vw 4vw 24vw 10vw;
     grid-row: 1;
 
-    display: flex;
-    flex-direction: column;
+    padding-top: 15vh;
 }
 
-#nameFormDiv a {
-    margin-bottom: 0.5em;
+#ourProjectsTitle {
+    grid-column: 2;
 }
 
-#emailFormDiv {
-    grid-column: 1/2;
+#interfaceServiceDiv {
     grid-row: 2;
+    grid-column: 2/3;
+
+    background: rgba(255, 255, 255, 1);
 
     display: flex;
     flex-direction: column;
+    
+    padding: 2em 3em;
+    height: 40vh;
 }
 
-#emailFormDiv a {
-    margin-bottom: 0.5em;
-    margin-top: 1em;
+.serviceImageDiv {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+    background: rgba(236, 247, 255, 1);
+
+    border-radius: 50%;
+    width: 5vw;
+    height: 10vh;
 }
 
-#phoneFormDiv {
-    grid-column: 3/4;
+#experienceServiceDiv {
     grid-row: 2;
+    grid-column: 4/5;
+
+    background: rgba(255, 255, 255, 1);
 
     display: flex;
     flex-direction: column;
+
+    padding: 2em 3em;
+    height: 40vh;
 }
 
-#phoneFormDiv a {
-    margin-bottom: 0.5em;
-    margin-top: 1em;
-}
+#developmentServiceDiv {
+    grid-row: 2;
+    grid-column: 6/7;
 
-#messageFormDiv {
-    grid-column: 1/4;
-    grid-row: 3;
+    background: rgba(255, 255, 255, 1);
 
     display: flex;
     flex-direction: column;
+
+    padding: 2em 3em;
+    height: 40vh;
 }
 
-#messageFormDiv a {
-    margin-bottom: 0.5em;
-    margin-top: 1em;
-}
-
-#messageFormDiv textarea  {
-    min-height: 10vh;
-    resize: none;
-}
-
-#buttonFormDiv {
-    grid-column: 1/4;
-    grid-row: 5;
-
-    margin-top: 1.5em;
-}
-
-#buttonFormDiv button {
-    width: 100%;
-    height: 100%;
-    background-color: #072AC8;
-    border: none;
-
-    font-family: 'Roboto';
-    font-size: 1.0625rem;
-    font-weight: 500;
-    line-height: 22px;
+.serviceTitle {
+    font-family: 'Roboto Medium';
+    font-size: 1.5vw;
+    font-weight: bold;
     letter-spacing: 0em;
-    text-align: center;
-    color: white;
-    padding: 20px;
+    color: rgba(41, 46, 71, 1);
 }
 
+.serviceText {
+    font-family: 'Roboto Regular';
+    font-size: 1vw;
+    font-weight: 500;
+    line-height: 2vh;
+    letter-spacing: 0em;
+    color: rgba(107, 112, 141, 1);
+}
+
+.serviceLearnMoreDiv {
+    height: 10vh;
+    display: flex; 
+    align-items: end;
+}
+
+.serviceLearnMore {
+    font-family: 'Roboto';
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(7, 42, 200, 1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+
+    #project1div {
+        grid-row: 2;
+        grid-column: 2/7;
+    }
+
+    #project2div, #project3div {
+        display: none;
+    }
+}
+/*Question */
+
+#questionSection {
+    display: grid;
+    grid-row: 1;
+    grid-template-columns: 5vw 90vw 5vw;
+
+    margin: 5vh 0;
+}
+
+#contentQuestionDiv {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    grid-column: 2;
+    background: rgba(255, 198, 0, 1);
+
+    padding: 2vw;
+    row-gap: 1vw;
+}
+
+#questionTitleDiv {
+    grid-column: 2;
+    text-align: center;
+}
+
+
+#questionSubTitleDiv {
+    grid-column: 2;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+#questionMailDiv {
+    grid-column: 2;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+
+    height: 7vh;
+}
+
+#questionMailDiv > div{
+    width: 70%;
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#mailIcon{
+    position: absolute;
+    transform: scale(0.9) translateX(-18vw);
+}
+
+#subscribeQuestionInput {
+    height: 100%;
+    width: 100%;
+    padding-left: 3vw;
+    border: none;
+}
+
+#subscribeQuestionButton {
+    background-color: #072AC8;
+    color: white;
+    border: #072AC8 0.5vw solid;
+    height: 100%;
+    width: 40%;
+}
 
 /* Footer */
 
@@ -262,7 +449,7 @@ input {
     display: grid;
     grid-template-columns: repeat(10, 10vw);
     grid-row: 1;
-    padding-bottom: 4vh;
+    padding: 15vh 0 4vh;
     row-gap: 1vh;
 }
 
